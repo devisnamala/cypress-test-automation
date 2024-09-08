@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.039" tests="1" failures="0" skipped="1">
+  <testsuite name="Root Suite" timestamp="2024-09-08T19:38:10" tests="0" file="cypress/e2e/tests/FormyPageTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Formy page complete form" timestamp="2024-09-08T19:38:10" tests="1" time="0.005" failures="0">
+  </testsuite>
+</testsuites>

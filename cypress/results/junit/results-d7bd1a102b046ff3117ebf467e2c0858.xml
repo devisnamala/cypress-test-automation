@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.173" tests="5" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-09-08T21:01:26" tests="0" file="cypress/e2e/tests/apiTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Testing with Cypress" timestamp="2024-09-08T21:01:26" tests="5" time="2.121" failures="1">
+    <testcase name="API Testing with Cypress should GET a list of users" time="0.247" classname="should GET a list of users">
+    </testcase>
+    <testcase name="API Testing with Cypress should create a new user" time="0.108" classname="should create a new user">
+    </testcase>
+    <testcase name="API Testing with Cypress should POST a new user" time="0.576" classname="should POST a new user">
+      <failure message="expected 201 to equal 400" type="AssertionError"><![CDATA[AssertionError: expected 201 to equal 400
+    at Context.eval (webpack:///./cypress/e2e/tests/apiTest.cy.js:30:37)
+
+      + expected - actual
+
+      -201
+      +400
+      ]]></failure>
+    </testcase>
+    <testcase name="API Testing with Cypress should update a user" time="0.130" classname="should update a user">
+    </testcase>
+    <testcase name="API Testing with Cypress should DELETE a user" time="0.079" classname="should DELETE a user">
+    </testcase>
+  </testsuite>
+</testsuites>

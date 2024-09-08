@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.470" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-09-07T07:39:58" tests="0" file="cypress/e2e/tests/apiTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Testing with Cypress" timestamp="2024-09-07T07:39:58" tests="1" time="2.415" failures="1">
+    <testcase name="API Testing with Cypress should GET a list of users" time="0.623" classname="should GET a list of users">
+      <failure message="`cy.request()` failed on:
+
+https://parabank.parasoft.com/function%20baseUrl()%20%7B%20%20const%20baseUrl%20=%20Cypress.config(&apos;baseUrl&apos;);%20%20return%20baseUrl;%7Dapi/users?page=2
+
+The response we received from your web server was:
+
+  &gt; 403: Forbidden
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: https://parabank.parasoft.com/function%20baseUrl()%20%7B%20%20const%20baseUrl%20=%20Cypress.config(&apos;baseUrl&apos;);%20%20return%20baseUrl;%7Dapi/users?page=2
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 403 - Forbidden
+Headers: {
+  &quot;date&quot;: &quot;Sat, 07 Sep 2024 07:40:00 GMT&quot;,
+  &quot;content-type&quot;: &quot;text/html; charset=UTF-8&quot;,
+  &quot;transfer-encoding&quot;: &quot;chunked&quot;,
+  &quot;connection&quot;: &quot;close&quot;,
+  &quot;accept-ch&quot;: &quot;Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA&quot;,
+  &quot;critical-ch&quot;: &quot;Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA&quot;,
+  &quot;cross-origin-embedder-policy&quot;: &quot;require-corp&quot;,
+  &quot;cross-origin-opener-policy&quot;: &quot;same-origin&quot;,
+  &quot;cross-origin-resource-policy&quot;: &quot;same-origin&quot;,
+  &quot;origin-agent-cluster&quot;: &quot;?1&quot;,
+  &quot;permissions-policy&quot;: &quot;accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()&quot;,
+  &quot;referrer-policy&quot;: &quot;same-origin&quot;,
+  &quot;x-content-options&quot;: &quot;nosniff&quot;,
+  &quot;x-frame-options&quot;: &quot;SAMEORIGIN&quot;,
+  &quot;cf-mitigated&quot;: &quot;challenge&quot;,
+  &quot;cf-chl-out&quot;: &quot;frEN5rWZigFF9UR9hP8NBF1qc4UdqFfuFgpWlBvM9/YT9vkIqBJHffDN4wuxStK7S9obBRTwJIM4Ye4EEbWgGNcoYHp7tVmECYXdvsHTXz3WTtMISs7FremskhWVsEFKjzRbd4sWz+iSMjNjf3uQ3Q==$uYhRXch7/sTtM5cU3cqtHw==&quot;,
+  &quot;cache-control&quot;: &quot;private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0&quot;,
+  &quot;expires&quot;: &quot;Thu, 01 Jan 1970 00:00:01 GMT&quot;,
+  &quot;vary&quot;: &quot;Accept-Encoding&quot;,
+  &quot;strict-transport-security&quot;: &quot;max-age=0; includeSubDomains; preload&quot;,
+  &quot;x-content-type-options&quot;: &quot;nosniff&quot;,
+  &quot;server&quot;: &quot;cloudflare&quot;,
+  &quot;cf-ray&quot;: &quot;8bf50c573cf8bf0f-LHR&quot;,
+  &quot;content-encoding&quot;: &quot;gzip&quot;
+}
+Body: &lt;!DOCTYPE html&gt;&lt;html lang=&quot;en-US&quot;&gt;&lt;head&gt;&lt;title&gt;Just a moment...&lt;/title&gt;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;&gt;&lt;meta name=&quot;robots&quot; content=&quot;noindex,nofollow&quot;&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1&quot;&gt;&lt;style&gt;*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131}button,html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}body.no-js .loading-spinner{visibility:hidden}body.theme-dark{background-color:#222;color:#d9d9d9}body.theme-dark a{color:#fff}body.theme-dark a:hover{color:#ee730a;text-decoration:underline}body.theme-dark .lds-ring div{border-color:#999 transparent transparent}body.theme-dark .font-red{color:#b20f03}body.theme-dark .pow-button{background-color:#4693ff;color:#1d1d1d}body.theme-dark #challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body.theme-dark #challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY...
+
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://parabank.parasoft.com/function%20baseUrl()%20%7B%20%20const%20baseUrl%20=%20Cypress.config('baseUrl');%20%20return%20baseUrl;%7Dapi/users?page=2
+
+The response we received from your web server was:
+
+  > 403: Forbidden
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: https://parabank.parasoft.com/function%20baseUrl()%20%7B%20%20const%20baseUrl%20=%20Cypress.config('baseUrl');%20%20return%20baseUrl;%7Dapi/users?page=2
+Headers: {
+  "Connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate"
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 403 - Forbidden
+Headers: {
+  "date": "Sat, 07 Sep 2024 07:40:00 GMT",
+  "content-type": "text/html; charset=UTF-8",
+  "transfer-encoding": "chunked",
+  "connection": "close",
+  "accept-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+  "critical-ch": "Sec-CH-UA-Bitness, Sec-CH-UA-Arch, Sec-CH-UA-Full-Version, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Platform, Sec-CH-UA, UA-Bitness, UA-Arch, UA-Full-Version, UA-Mobile, UA-Model, UA-Platform-Version, UA-Platform, UA",
+  "cross-origin-embedder-policy": "require-corp",
+  "cross-origin-opener-policy": "same-origin",
+  "cross-origin-resource-policy": "same-origin",
+  "origin-agent-cluster": "?1",
+  "permissions-policy": "accelerometer=(),autoplay=(),browsing-topics=(),camera=(),clipboard-read=(),clipboard-write=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()",
+  "referrer-policy": "same-origin",
+  "x-content-options": "nosniff",
+  "x-frame-options": "SAMEORIGIN",
+  "cf-mitigated": "challenge",
+  "cf-chl-out": "frEN5rWZigFF9UR9hP8NBF1qc4UdqFfuFgpWlBvM9/YT9vkIqBJHffDN4wuxStK7S9obBRTwJIM4Ye4EEbWgGNcoYHp7tVmECYXdvsHTXz3WTtMISs7FremskhWVsEFKjzRbd4sWz+iSMjNjf3uQ3Q==$uYhRXch7/sTtM5cU3cqtHw==",
+  "cache-control": "private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0",
+  "expires": "Thu, 01 Jan 1970 00:00:01 GMT",
+  "vary": "Accept-Encoding",
+  "strict-transport-security": "max-age=0; includeSubDomains; preload",
+  "x-content-type-options": "nosniff",
+  "server": "cloudflare",
+  "cf-ray": "8bf50c573cf8bf0f-LHR",
+  "content-encoding": "gzip"
+}
+Body: <!DOCTYPE html><html lang="en-US"><head><title>Just a moment...</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="noindex,nofollow"><meta name="viewport" content="width=device-width,initial-scale=1"><style>*{box-sizing:border-box;margin:0;padding:0}html{line-height:1.15;-webkit-text-size-adjust:100%;color:#313131}button,html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}body{display:flex;flex-direction:column;height:100vh;min-height:100vh}body.no-js .loading-spinner{visibility:hidden}body.theme-dark{background-color:#222;color:#d9d9d9}body.theme-dark a{color:#fff}body.theme-dark a:hover{color:#ee730a;text-decoration:underline}body.theme-dark .lds-ring div{border-color:#999 transparent transparent}body.theme-dark .font-red{color:#b20f03}body.theme-dark .pow-button{background-color:#4693ff;color:#1d1d1d}body.theme-dark #challenge-success-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=)}body.theme-dark #challenge-error-text{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY...
+
+
+https://on.cypress.io/request
+    at <unknown> (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:144155:80)
+    at tryCatcher (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:11318:23)
+    at Promise._settlePromiseFromHandler (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9253:31)
+    at Promise._settlePromise (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9310:18)
+    at Promise._settlePromise0 (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9355:10)
+    at Promise._settlePromises (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9435:18)
+    at _drainQueueStep (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:6025:12)
+    at _drainQueue (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:6018:9)
+    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:6034:5)
+    at Async.drainQueues (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:5904:14)
+From Your Spec Code:
+    at apiGet (webpack:///./cypress/e2e/utils/apiUtils.js:9:14)
+    at Context.eval (webpack:///./cypress/e2e/tests/apiTest.cy.js:7:6)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

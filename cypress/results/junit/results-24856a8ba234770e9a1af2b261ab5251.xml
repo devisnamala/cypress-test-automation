@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.101" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-09-08T20:51:14" tests="0" file="cypress/e2e/tests/apiTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Testing with Cypress" timestamp="2024-09-08T20:51:14" tests="4" time="2.064" failures="1">
+    <testcase name="API Testing with Cypress should GET a list of users" time="0.260" classname="should GET a list of users">
+    </testcase>
+    <testcase name="API Testing with Cypress should POST a new user" time="0.109" classname="should POST a new user">
+    </testcase>
+    <testcase name="API Testing with Cypress should PUT to update a user" time="0.572" classname="should PUT to update a user">
+      <failure message="expected { Object (name, job, ...) } to have property &apos;name&apos; of &apos;John Doe&apos;, but got &apos;morpheus&apos;" type="AssertionError"><![CDATA[AssertionError: expected { Object (name, job, ...) } to have property 'name' of 'John Doe', but got 'morpheus'
+    at Context.eval (webpack:///./cypress/e2e/tests/apiTest.cy.js:29:38)
+
+      + expected - actual
+
+      -'morpheus'
+      +'John Doe'
+      ]]></failure>
+    </testcase>
+    <testcase name="API Testing with Cypress should DELETE a user" time="0.116" classname="should DELETE a user">
+    </testcase>
+  </testsuite>
+</testsuites>

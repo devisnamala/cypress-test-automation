@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.248" tests="4" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-09-08T19:36:09" tests="0" file="cypress/e2e/tests/apiTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Testing with Cypress" timestamp="2024-09-08T19:36:09" tests="4" time="2.178" failures="1">
+    <testcase name="API Testing with Cypress should GET a list of users" time="0.353" classname="should GET a list of users">
+    </testcase>
+    <testcase name="API Testing with Cypress should POST a new user" time="0.609" classname="should POST a new user">
+      <failure message="the argument to property must be a string, number, or symbol" type="AssertionError"><![CDATA[AssertionError: the argument to property must be a string, number, or symbol
+    at Context.eval (webpack:///./cypress/e2e/tests/apiTest.cy.js:21:8)]]></failure>
+    </testcase>
+    <testcase name="API Testing with Cypress should PUT to update a user" time="0.114" classname="should PUT to update a user">
+    </testcase>
+    <testcase name="API Testing with Cypress should DELETE a user" time="0.099" classname="should DELETE a user">
+    </testcase>
+  </testsuite>
+</testsuites>

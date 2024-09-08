@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.881" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-09-07T19:33:36" tests="0" file="cypress/e2e/tests/apiTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Testing with Cypress" timestamp="2024-09-07T19:33:36" tests="1" time="1.844" failures="1">
+    <testcase name="API Testing with Cypress should GET a list of users" time="0.619" classname="should GET a list of users">
+      <failure message="`cy.request()` failed on:
+
+https://reqres.in//api/users?page=2
+
+The response we received from your web server was:
+
+  &gt; 404: Not Found
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: https://reqres.in//api/users?page=2
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 404 - Not Found
+Headers: {
+  &quot;date&quot;: &quot;Sat, 07 Sep 2024 19:33:37 GMT&quot;,
+  &quot;content-type&quot;: &quot;text/html; charset=utf-8&quot;,
+  &quot;transfer-encoding&quot;: &quot;chunked&quot;,
+  &quot;connection&quot;: &quot;keep-alive&quot;,
+  &quot;report-to&quot;: &quot;{\&quot;group\&quot;:\&quot;heroku-nel\&quot;,\&quot;max_age\&quot;:3600,\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https://nel.heroku.com/reports?ts=1725737616&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=Cu6l0LDD335QU1E4A5jCwP2SHtdipJxWkKc3mMQm2Hw%3D\&quot;}]}&quot;,
+  &quot;reporting-endpoints&quot;: &quot;heroku-nel=https://nel.heroku.com/reports?ts=1725737616&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=Cu6l0LDD335QU1E4A5jCwP2SHtdipJxWkKc3mMQm2Hw%3D&quot;,
+  &quot;nel&quot;: &quot;{\&quot;report_to\&quot;:\&quot;heroku-nel\&quot;,\&quot;max_age\&quot;:3600,\&quot;success_fraction\&quot;:0.005,\&quot;failure_fraction\&quot;:0.05,\&quot;response_headers\&quot;:[\&quot;Via\&quot;]}&quot;,
+  &quot;x-powered-by&quot;: &quot;Express&quot;,
+  &quot;access-control-allow-origin&quot;: &quot;*&quot;,
+  &quot;via&quot;: &quot;1.1 vegur&quot;,
+  &quot;cache-control&quot;: &quot;max-age=14400&quot;,
+  &quot;cf-cache-status&quot;: &quot;HIT&quot;,
+  &quot;age&quot;: &quot;1&quot;,
+  &quot;vary&quot;: &quot;Accept-Encoding&quot;,
+  &quot;server&quot;: &quot;cloudflare&quot;,
+  &quot;cf-ray&quot;: &quot;8bf921b00f84cd29-LHR&quot;,
+  &quot;content-encoding&quot;: &quot;gzip&quot;
+}
+Body: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+    &lt;head&gt;
+        &lt;!-- Google Tag Manager --&gt;
+        &lt;script&gt;
+  ;(function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({
+          &apos;gtm.start&apos;: new Date().getTime(),
+          event: &apos;gtm.js&apos;,
+      })
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != &apos;dataLayer&apos; ? &apos;&amp;l=&apos; + l : &apos;&apos;
+      j.async = true
+      j.src = &apos;https://www.googletagmanager.com/gtm.js?id=&apos; + i + dl
+      f.parentNode.insertBefore(j, f)
+  })(window, document, &apos;script&apos;, &apos;dataLayer&apos;, &apos;GTM-KB622KF&apos;)
+        &lt;/script&gt;
+        &lt;!-- End Google Tag Manager --&gt;
+        &lt;script src=&quot;https://js.stripe.com/v3/&quot;&gt;&lt;/script&gt;
+        &lt;meta charset=&quot;utf-8&quot; /&gt;
+        &lt;meta
+  name=&quot;viewport&quot;
+  content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0&quot;
+        /&gt;
+        &lt;meta
+  name=&quot;description&quot;
+  content=&quot;A hosted REST-API ready to respond to your AJAX requests&quot;
+        /&gt;
+        &lt;title&gt;
+  Reqres - A hosted REST-API ready to respond to your AJAX requests
+        &lt;/title&gt;
+        &lt;link
+  href=&quot;//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css&quot;
+  rel=&quot;stylesheet&quot;
+        /&gt;
+
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/app.css&quot; /&gt;
+        &lt;script
+  type=&quot;text/javascript&quot;
+  src=&quot;//m.servedby-buysellads.com/monetization.custom.js&quot;
+        &gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class=&quot;header-content&quot;&gt;
+  &lt;header class=&quot;main-header&quot;&gt;
+      &lt;section class=&quot;wrap&quot;&gt;
+          &lt;h1 class=&quot;logo&quot;&gt;
+              &lt;a href=&quot;/&quot;&gt;&lt;img src=&quot;/img/logo.png&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;
+          &lt;/h1&gt;
+      &lt;/section&gt;
+  &lt;/header&gt;
+  &lt;main class=&quot;the-sell&quot;&gt;
+      &lt;div class=&quot;wrap&quot;&gt;
+          &lt;h2 class=&quot;taglin...
+
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://reqres.in//api/users?page=2
+
+The response we received from your web server was:
+
+  > 404: Not Found
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: GET
+URL: https://reqres.in//api/users?page=2
+Headers: {
+  "Connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate"
+}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 404 - Not Found
+Headers: {
+  "date": "Sat, 07 Sep 2024 19:33:37 GMT",
+  "content-type": "text/html; charset=utf-8",
+  "transfer-encoding": "chunked",
+  "connection": "keep-alive",
+  "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1725737616&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=Cu6l0LDD335QU1E4A5jCwP2SHtdipJxWkKc3mMQm2Hw%3D\"}]}",
+  "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1725737616&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=Cu6l0LDD335QU1E4A5jCwP2SHtdipJxWkKc3mMQm2Hw%3D",
+  "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+  "x-powered-by": "Express",
+  "access-control-allow-origin": "*",
+  "via": "1.1 vegur",
+  "cache-control": "max-age=14400",
+  "cf-cache-status": "HIT",
+  "age": "1",
+  "vary": "Accept-Encoding",
+  "server": "cloudflare",
+  "cf-ray": "8bf921b00f84cd29-LHR",
+  "content-encoding": "gzip"
+}
+Body: <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+  ;(function (w, d, s, l, i) {
+      w[l] = w[l] || []
+      w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js',
+      })
+      var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+      j.async = true
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+      f.parentNode.insertBefore(j, f)
+  })(window, document, 'script', 'dataLayer', 'GTM-KB622KF')
+        </script>
+        <!-- End Google Tag Manager -->
+        <script src="https://js.stripe.com/v3/"></script>
+        <meta charset="utf-8" />
+        <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+        />
+        <meta
+  name="description"
+  content="A hosted REST-API ready to respond to your AJAX requests"
+        />
+        <title>
+  Reqres - A hosted REST-API ready to respond to your AJAX requests
+        </title>
+        <link
+  href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+  rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="/css/app.css" />
+        <script
+  type="text/javascript"
+  src="//m.servedby-buysellads.com/monetization.custom.js"
+        ></script>
+    </head>
+    <body>
+        <div class="header-content">
+  <header class="main-header">
+      <section class="wrap">
+          <h1 class="logo">
+              <a href="/"><img src="/img/logo.png" alt="" /></a>
+          </h1>
+      </section>
+  </header>
+  <main class="the-sell">
+      <div class="wrap">
+          <h2 class="taglin...
+
+
+https://on.cypress.io/request
+    at <unknown> (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:144155:80)
+    at tryCatcher (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:11318:23)
+    at Promise._settlePromiseFromHandler (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9253:31)
+    at Promise._settlePromise (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9310:18)
+    at Promise._settlePromise0 (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9355:10)
+    at Promise._settlePromises (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9435:18)
+    at _drainQueueStep (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:6025:12)
+    at _drainQueue (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:6018:9)
+    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:6034:5)
+    at Async.drainQueues (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:5904:14)
+From Your Spec Code:
+    at apiGet (webpack:///./cypress/e2e/utils/apiUtils.js:9:14)
+    at Context.eval (webpack:///./cypress/e2e/tests/apiTest.cy.js:7:6)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

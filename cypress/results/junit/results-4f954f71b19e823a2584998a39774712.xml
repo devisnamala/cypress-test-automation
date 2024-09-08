@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.073" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-09-08T21:18:18" tests="0" file="cypress/e2e/tests/apiTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Testing with Cypress" timestamp="2024-09-08T21:18:18" tests="5" time="1.020" failures="0">
+    <testcase name="API Testing with Cypress should GET a list of users" time="0.567" classname="should GET a list of users">
+    </testcase>
+    <testcase name="API Testing with Cypress should create a new user" time="0.132" classname="should create a new user">
+    </testcase>
+    <testcase name="API Testing with Cypress should POST a new user" time="0.098" classname="should POST a new user">
+    </testcase>
+    <testcase name="API Testing with Cypress should update a user" time="0.104" classname="should update a user">
+    </testcase>
+    <testcase name="API Testing with Cypress should DELETE a user" time="0.122" classname="should DELETE a user">
+    </testcase>
+  </testsuite>
+</testsuites>

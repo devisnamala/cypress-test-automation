@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.271" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-09-07T07:41:16" tests="0" file="cypress/e2e/tests/LoginTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login Test" timestamp="2024-09-07T07:41:16" tests="1" time="2.237" failures="1">
+    <testcase name="Login Test should successfully login for user" time="0.623" classname="should successfully login for user">
+      <failure message="`cy.visit()` failed trying to load:
+
+https://reqres.in//parabank/index.htm
+
+The response we received from your web server was:
+
+  &gt; 404: Not Found
+
+This was considered a failure because the status code was not `2xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`" type="CypressError"><![CDATA[CypressError: `cy.visit()` failed trying to load:
+
+https://reqres.in//parabank/index.htm
+
+The response we received from your web server was:
+
+  > 404: Not Found
+
+This was considered a failure because the status code was not `2xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+    at <unknown> (https://reqres.in/__cypress/runner/cypress_runner.js:142324:84)
+    at visitFailedByErr (https://reqres.in/__cypress/runner/cypress_runner.js:141629:12)
+    at <unknown> (https://reqres.in/__cypress/runner/cypress_runner.js:142304:13)
+    at tryCatcher (https://reqres.in/__cypress/runner/cypress_runner.js:11318:23)
+    at Promise._settlePromiseFromHandler (https://reqres.in/__cypress/runner/cypress_runner.js:9253:31)
+    at Promise._settlePromise (https://reqres.in/__cypress/runner/cypress_runner.js:9310:18)
+    at Promise._settlePromise0 (https://reqres.in/__cypress/runner/cypress_runner.js:9355:10)
+    at Promise._settlePromises (https://reqres.in/__cypress/runner/cypress_runner.js:9431:18)
+    at _drainQueueStep (https://reqres.in/__cypress/runner/cypress_runner.js:6025:12)
+    at _drainQueue (https://reqres.in/__cypress/runner/cypress_runner.js:6018:9)
+    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:6034:5)
+    at Async.drainQueues (https://reqres.in/__cypress/runner/cypress_runner.js:5904:14)
+From Your Spec Code:
+    at LoginPage.open (webpack:///./cypress/e2e/pages/LoginPage.js:16:18)
+    at LoginPage.openLoginPage (webpack:///./cypress/e2e/pages/LoginPage.js:21:13)
+    at Context.eval (webpack:///./cypress/e2e/tests/LoginTest.cy.js:5:18)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

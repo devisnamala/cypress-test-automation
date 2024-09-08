@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.391" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-09-08T11:51:35" tests="0" file="cypress/e2e/tests/FormyPageTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Formy page complete form" timestamp="2024-09-08T11:51:35" tests="1" time="1.358" failures="1">
+    <testcase name="Formy page complete form Fill form" time="0.516" classname="Fill form">
+      <failure message="Cannot read properties of undefined (reading &apos;firstname&apos;)" type="TypeError"><![CDATA[TypeError: Cannot read properties of undefined (reading 'firstname')
+    at Context.eval (webpack:///./cypress/e2e/tests/FormyPageTest.cy.js:14:32)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,10 @@
+{
+    "firstname": "Siri",
+    "lastname": "Namala",
+    "jobTitle": "Software Engineer",
+    "Radio": 0,
+    "checkbox": "2",
+    "Dropdown": "5-9",
+    "Date": "2024-09-06",
+    "expectedMessage":"The form was successfully submitted!"
+  }

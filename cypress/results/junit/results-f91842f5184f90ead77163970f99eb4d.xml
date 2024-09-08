@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.098" tests="5" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-09-08T21:03:04" tests="0" file="cypress/e2e/tests/apiTest.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="API Testing with Cypress" timestamp="2024-09-08T21:03:04" tests="5" time="2.068" failures="1">
+    <testcase name="API Testing with Cypress should GET a list of users" time="0.194" classname="should GET a list of users">
+    </testcase>
+    <testcase name="API Testing with Cypress should create a new user" time="0.161" classname="should create a new user">
+    </testcase>
+    <testcase name="API Testing with Cypress should POST a new user" time="0.538" classname="should POST a new user">
+      <failure message="`cy.request()` failed on:
+
+https://reqres.in/api/login
+
+The response we received from your web server was:
+
+  &gt; 400: Bad Request
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://reqres.in/api/login
+Headers: {
+  &quot;Connection&quot;: &quot;keep-alive&quot;,
+  &quot;user-agent&quot;: &quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36&quot;,
+  &quot;accept&quot;: &quot;*/*&quot;,
+  &quot;accept-encoding&quot;: &quot;gzip, deflate&quot;,
+  &quot;content-type&quot;: &quot;application/json&quot;,
+  &quot;content-length&quot;: 24
+}
+Body: {&quot;email&quot;:&quot;peter@klaven&quot;}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 400 - Bad Request
+Headers: {
+  &quot;date&quot;: &quot;Sun, 08 Sep 2024 21:03:06 GMT&quot;,
+  &quot;content-type&quot;: &quot;application/json; charset=utf-8&quot;,
+  &quot;content-length&quot;: &quot;28&quot;,
+  &quot;connection&quot;: &quot;keep-alive&quot;,
+  &quot;report-to&quot;: &quot;{\&quot;group\&quot;:\&quot;heroku-nel\&quot;,\&quot;max_age\&quot;:3600,\&quot;endpoints\&quot;:[{\&quot;url\&quot;:\&quot;https://nel.heroku.com/reports?ts=1725829386&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=F0%2F%2BPrFa%2FzBbfUp6zZkHtvyhGAO1OTnaO6MXYrrfoGc%3D\&quot;}]}&quot;,
+  &quot;reporting-endpoints&quot;: &quot;heroku-nel=https://nel.heroku.com/reports?ts=1725829386&amp;sid=c4c9725f-1ab0-44d8-820f-430df2718e11&amp;s=F0%2F%2BPrFa%2FzBbfUp6zZkHtvyhGAO1OTnaO6MXYrrfoGc%3D&quot;,
+  &quot;nel&quot;: &quot;{\&quot;report_to\&quot;:\&quot;heroku-nel\&quot;,\&quot;max_age\&quot;:3600,\&quot;success_fraction\&quot;:0.005,\&quot;failure_fraction\&quot;:0.05,\&quot;response_headers\&quot;:[\&quot;Via\&quot;]}&quot;,
+  &quot;x-powered-by&quot;: &quot;Express&quot;,
+  &quot;access-control-allow-origin&quot;: &quot;*&quot;,
+  &quot;etag&quot;: &quot;W/\&quot;1c-NmpazMScs9tOqR7eDEesn+pqC9Q\&quot;&quot;,
+  &quot;via&quot;: &quot;1.1 vegur&quot;,
+  &quot;cf-cache-status&quot;: &quot;DYNAMIC&quot;,
+  &quot;server&quot;: &quot;cloudflare&quot;,
+  &quot;cf-ray&quot;: &quot;8c01e2204efa777f-LHR&quot;
+}
+Body: {
+  &quot;error&quot;: &quot;Missing password&quot;
+}
+
+
+https://on.cypress.io/request" type="CypressError"><![CDATA[CypressError: `cy.request()` failed on:
+
+https://reqres.in/api/login
+
+The response we received from your web server was:
+
+  > 400: Bad Request
+
+This was considered a failure because the status code was not `2xx` or `3xx`.
+
+If you do not want status codes to cause failures pass the option: `failOnStatusCode: false`
+
+-----------------------------------------------------------
+
+The request we sent was:
+
+Method: POST
+URL: https://reqres.in/api/login
+Headers: {
+  "Connection": "keep-alive",
+  "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Cypress/10.11.0 Chrome/106.0.5249.51 Electron/21.0.0 Safari/537.36",
+  "accept": "*/*",
+  "accept-encoding": "gzip, deflate",
+  "content-type": "application/json",
+  "content-length": 24
+}
+Body: {"email":"peter@klaven"}
+
+-----------------------------------------------------------
+
+The response we got was:
+
+Status: 400 - Bad Request
+Headers: {
+  "date": "Sun, 08 Sep 2024 21:03:06 GMT",
+  "content-type": "application/json; charset=utf-8",
+  "content-length": "28",
+  "connection": "keep-alive",
+  "report-to": "{\"group\":\"heroku-nel\",\"max_age\":3600,\"endpoints\":[{\"url\":\"https://nel.heroku.com/reports?ts=1725829386&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=F0%2F%2BPrFa%2FzBbfUp6zZkHtvyhGAO1OTnaO6MXYrrfoGc%3D\"}]}",
+  "reporting-endpoints": "heroku-nel=https://nel.heroku.com/reports?ts=1725829386&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=F0%2F%2BPrFa%2FzBbfUp6zZkHtvyhGAO1OTnaO6MXYrrfoGc%3D",
+  "nel": "{\"report_to\":\"heroku-nel\",\"max_age\":3600,\"success_fraction\":0.005,\"failure_fraction\":0.05,\"response_headers\":[\"Via\"]}",
+  "x-powered-by": "Express",
+  "access-control-allow-origin": "*",
+  "etag": "W/\"1c-NmpazMScs9tOqR7eDEesn+pqC9Q\"",
+  "via": "1.1 vegur",
+  "cf-cache-status": "DYNAMIC",
+  "server": "cloudflare",
+  "cf-ray": "8c01e2204efa777f-LHR"
+}
+Body: {
+  "error": "Missing password"
+}
+
+
+https://on.cypress.io/request
+    at <unknown> (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:144155:80)
+    at tryCatcher (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:11318:23)
+    at Promise._settlePromiseFromHandler (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9253:31)
+    at Promise._settlePromise (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9310:18)
+    at Promise._settlePromise0 (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9355:10)
+    at Promise._settlePromises (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:9435:18)
+    at _drainQueueStep (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:6025:12)
+    at _drainQueue (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:6018:9)
+    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:6034:5)
+    at Async.drainQueues (https://parabank.parasoft.com/__cypress/runner/cypress_runner.js:5904:14)
+From Your Spec Code:
+    at apiPost (webpack:///./cypress/e2e/utils/apiUtils.js:17:14)
+    at Context.eval (webpack:///./cypress/e2e/tests/apiTest.cy.js:28:6)]]></failure>
+    </testcase>
+    <testcase name="API Testing with Cypress should update a user" time="0.125" classname="should update a user">
+    </testcase>
+    <testcase name="API Testing with Cypress should DELETE a user" time="0.102" classname="should DELETE a user">
+    </testcase>
+  </testsuite>
+</testsuites>
