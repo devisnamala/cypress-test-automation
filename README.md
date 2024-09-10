@@ -1,7 +1,6 @@
-# Automated API Testing with TypeScript, Playwright, and Cucumber
+# Cypress Test Automation
 ![Static Badge](https://img.shields.io/badge/Cypress-logo?style=for-the-badge&logo=cypress&logoColor=black&labelColor=green)
-![Static Badge](https://img.shields.io/badge/TypeScript-logo?style=for-the-badge&logo=typescript&logoColor=white&labelColor=rgb(49%2C%20120%2C%20198)&color=rgb(22%2C%2027%2C%2034))
-![Static Badge](https://img.shields.io/badge/Cucumber-logo?style=for-the-badge&logo=cucumber&logoColor=black&labelColor=rgb(35%2C%20217%2C%20108)&color=rgb(22%2C%2027%2C%2034))
+![Static Badge](https://img.shields.io/badge/Javascript-logo?style=for-the-badge&logo=javascript&logoColor=white&labelColor=rgb(49%2C%20120%2C%20198)&color=rgb(22%2C%2027%2C%2034))
 
 This project offers a framework and tools for automated API testing using TypeScript, Playwright, and Cucumber, following Behavior-Driven Development (BDD) best practices and employing the Page Object Model design pattern.
 
