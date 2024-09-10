@@ -2,16 +2,16 @@
 ![Static Badge](https://img.shields.io/badge/Cypress-logo?style=for-the-badge&logo=cypress&logoColor=black&labelColor=green)
 ![Static Badge](https://img.shields.io/badge/Javascript-logo?style=for-the-badge&logo=javascript&logoColor=white&labelColor=rgb(49%2C%20120%2C%20198)&color=rgb(22%2C%2027%2C%2034))
 
-This project offers a framework and tools for automated API testing using TypeScript, Playwright, and Cucumber, following Behavior-Driven Development (BDD) best practices and employing the Page Object Model design pattern.
+This project provides a framework and tools for automated UI and API testing using Cypress and JavaScript, following the Page Object Model (POM) design pattern.
 
-## Testing SmartScaleHR Features 🧪
+## Testing Features 🧪
 
-This suite of tests is specifically designed to validate and test features on the SmartScaleHR website. You'll find feature files under the `tests/features` directory.
+This suite of tests is specifically designed to validate and test features on the Parabank website. 
 
 
 ## Table of Contents 📑
 - [Requirements](#requirements)
-- [Folder Structure](#folder-structure)
+- [Features](#folder-structure)
 - [Installation](#installation)
 - [Test Execution](#test-execution)
 
@@ -19,25 +19,33 @@ This suite of tests is specifically designed to validate and test features on th
 ## <a id="requirements">Requirements 📋</a>
 
 - Node.js 21.2.0
-- @cucumber/cucumber: 10.0.1
-- @playwright/test: 1.40.0
-- @types/node: 20.9.2
-- ts-node: 10.9.1
-- winston: 3.11.0
-
-## <a id="folder-structure">Folder Structure 📂</a>
-
-- **cucumber.json:** Configuration or generated output by Cucumber.
-- **package-lock.json:** Specific details about exact dependency versions for the project.
-- **package.json:** Project configuration file for Node.js.
-
-### Directory "src"
+- cypress: 10.11.0
+- cypress-mochawesome-reporter: 3.5.1
 
 
-- **tests:** Directory containing test files and specifications.
-  - **features:** Subdirectory containing specification files in Gherkin format.
-  - **steps:** Directory containing files with steps for the specifications.
+## <a id="Features">Feature 📂</a>
 
+**Atomic and Independent Test Cases:** Tests are designed to be modular and self-contained, ensuring that each test case can run independently without relying on others.
+
+**Robust Locator Strategies:** Employs reliable methods for identifying and interacting with web elements, minimizing the risk of test failures due to changes in the UI.
+
+**No Hard-Coded Strings or Test Data in Spec Files:** Avoids embedding static strings or test data directly in test files, promoting maintainability and flexibility.
+
+**Hooks for Repeated Steps:** Utilizes hooks to handle common setup or teardown tasks across all test cases, reducing redundancy and improving test consistency.
+
+**External Data Loading from Fixtures:** Retrieves test data from external JSON files, enhancing data management and making it easier to update test scenarios.
+
+**Environment-Specific Configurations:** Supports configuration management and environment variables tailored to different environments (e.g., development, local, QA), allowing seamless environment transitions.
+
+**Test Filtering by Tags**: Enables the execution of tests based on specific tags (e.g., regression, smoke), facilitating targeted testing and efficient test management.
+
+**Dynamic Browser and Mode Configuration:** Allows specification of the browser and test mode through environment variables, providing flexibility in test execution.
+
+**Centralized Route Configuration:** Manages URL endpoints and routes in a centralized configuration file, simplifying updates and maintenance.
+
+**Reusable Utility Functions:** Includes a library of reusable functions within cypress/e2e/utils for common test operations, promoting code reuse and reducing duplication.
+
+**Multiple Reporters Configuration:** Supports various reporting formats (e.g., JUnit XML, cpress-mochawesome-reporter HTML) to accommodate different reporting needs and preferences.
 
 
 ## <a id="installation">Installation 🛠️</a>
@@ -45,7 +53,7 @@ This suite of tests is specifically designed to validate and test features on th
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/RaisingSolutions/Automation.git
+    git clone 
     ```
 
 2. Install dependencies:
@@ -57,19 +65,63 @@ This suite of tests is specifically designed to validate and test features on th
 
 ## <a id="test-execution">Test Execution ▶️</a>
 
-Run all the tests:
+**Running Cypress Tests**
+**Open the Cypress Test Runner:**
 
 ```bash
-npm run test
+npx cypress open
 ```
 
-Open report:
+**Run All Tests:**
+
+Executes all test spec files located in the cypress/e2e folder. By default, tests are run in headless mode using the Electron browser.
 
 ```bash
-start "" "test-results\reports\cucumber_report.html"
+npx cypress run
 ```
 
-**NOTE:**
+**Run Tests in a Specific Browser:**
 
-- Set up the respective environment variables beforehand.
+```bash
+npx cypress run --browser <browser_name>
+```
+
+Replace <browser_name> with the desired browser (e.g., chrome, firefox) to run tests in that browser.
+
+**Run Tests in Headed Mode:**
+
+```bash
+npx cypress run --headed
+```
+
+Runs tests in a visible browser window rather than headless mode.
+
+**Run a Specific Test Spec:**
+
+```bash
+npx cypress run --spec <path_to_spec_file> --headed --browser <browser_name>
+```
+
+Replace <path_to_spec_file> with the path to the specific test spec file, and <browser_name> with the desired browser.
+
+**Filter Tests by Tag:**
+
+```bash
+npx cypress run --env grepTags="<tag>"
+```
+
+Replace <tag> with the tag you want to filter by. For example, to run tests tagged as @smoke:
+
+```bash
+npx cypress run --spec cypress/e2e/tests/AddToCartTest.cy.js --env grepTags="@smoke"
+```
+
+Using Command Line Arguments with npm Scripts: When using npm scripts, append an extra -- before the Cypress arguments:
+
+```bash
+npm run <script_name> -- --env grepTags="<tag>" --headed --browser <browser_name>
+```
+
+
+
 
