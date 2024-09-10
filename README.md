@@ -122,6 +122,16 @@ Using Command Line Arguments with npm Scripts: When using npm scripts, append an
 npm run <script_name> -- --env grepTags="<tag>" --headed --browser <browser_name>
 ```
 
+```bash
+npm run test:registration -- --env environmentName="local",grepTags="@smoke" --headed --browser chrome
+```
 
+It will run tests with following configurations:
+spec 
+browser chrome
+mode headed
+tag smoke
+environmentName local
+baseUrl https://parabank.parasoft.com is automatically teken from environmentName
 
 
